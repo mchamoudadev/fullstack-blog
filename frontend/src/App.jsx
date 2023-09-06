@@ -17,7 +17,7 @@ function App() {
 				setCurrentUser(data);
 			} catch (err) {
 				if (err.response.status === 403) {
-					toast.error("please login first");
+					// toast.error("please login first");
 					navigate("/login");
 				}
 				console.log("err", err.response.status);
